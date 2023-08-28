@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ScoreboardController extends Controller
@@ -13,7 +14,7 @@ class ScoreboardController extends Controller
 
     public function fetchScores()
     {
-        $scores = \App\Models\User::orderBy('nilai', 'DESC')->paginate(10);
+        $scores = User::orderBy('nilai', 'DESC')->paginate(10);
         return response()->json($scores);
     }
 }

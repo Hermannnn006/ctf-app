@@ -23,7 +23,7 @@
                     </table>
                 </div>
                 <div class="flex justify-center mt-3">
-                    <button class="bg-sky-600 py-2 px-3 text-white mx-auto hover:bg-sky-900" @click="fetchNextscores">Load More</button>
+                    <InfiniteLoading @infinite="load" />
                 </div>
             </div>
         </div>
@@ -31,22 +31,12 @@
 </template>
                                                                                                                                 
 <script setup>
-import { onBeforeMount, reactive } from 'vue';
-
-const data = reactive({
+    import { reactive, onBeforeMount } from "vue";
+    const data = reactive({
     scores: [],
 });
 
-const fetchscores = async () => {
-    try {
-        const response = await axios.get('/scores');
-        data.scores = response.data;
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-const fetchNextscores = async () => {
+  const load = async $state => {
     try {
         const response = await axios.get(`/scores?page=${data.scores.current_page += 1}`);
         response.data.data.map(item => {
@@ -55,8 +45,16 @@ const fetchNextscores = async () => {
     } catch (error) {
         console.log(error);
     }
+  }
+
+  const fetchscores = async () => {
+    try {
+        const response = await axios.get('/scores');
+        data.scores = response.data;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 onBeforeMount(() => fetchscores());
-
-</script>    
+</script>  
