@@ -51,7 +51,7 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('password9098')
         ]);
 
-        User::factory()->count(1000)->create();
+        User::factory()->count(100)->create();
 
         Chalengge::create([
             'user_id' => 3,
