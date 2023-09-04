@@ -1,5 +1,4 @@
-aplikasi untuk bermain ctf
-https://hermansyah.c1.is
+Pplikasi platform bermain capture the flag dibuat dengan laravel, splade, vue dan tailwindcss
 1. tampilan login
 ![screenshot-127 0 0 1_8000-2023 09 04-10_17_49](https://github.com/Hermannnn006/ctf-app/assets/92978253/72e9a893-a109-4edf-a911-4c6972bcde6e)
 2. tampilan home
