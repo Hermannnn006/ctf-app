@@ -34,25 +34,32 @@
     import { reactive, onBeforeMount } from "vue";
     const data = reactive({
     scores: [],
+    page: 2
 });
 
-  const load = async $state => {
-    try {
-        const response = await axios.get(`/scores?page=${data.scores.current_page += 1}`);
-        response.data.data.map(item => {
+const load = async $state => {
+        try {
+        console.log(data.scores.current_page)
+        const response = await axios.get(`/scores?page=${data.scores.current_page=data.page}`);
+        const json = await response.data;
+        if (json.data < 10) $state.complete();
+        else {
+            response.data.data.map(item => {
             data.scores.data.push(item);
         });
+      }
+      data.page++
     } catch (error) {
-        console.log(error);
+        $state.error();
     }
-  }
+}
 
-  const fetchscores = async () => {
+  const fetchscores = async $state => {
     try {
         const response = await axios.get('/scores');
         data.scores = response.data;
     } catch (error) {
-        console.log(error);
+        $state.error();
     }
 }
 
