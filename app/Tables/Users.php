@@ -57,14 +57,5 @@ class Users extends AbstractTable
             ->column(key: 'username', searchable: true, sortable: true)
             ->column('action')
             ->paginate(10);
-            // ->rowLink(function(User $user){
-            //     return route('users.show', $user);
-            // })
-            // ->searchInput()
-            // ->selectFilter()
-            // ->withGlobalSearch()
-
-            // ->bulkAction()
-            // ->export()
     }
 }
