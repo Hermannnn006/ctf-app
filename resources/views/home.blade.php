@@ -11,7 +11,7 @@
                     <Link href="/chalengge" class="font-semibold px-4 py-3 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Let's Begin</Link>
                 </div>
                 <div class="W-1/2 md:w-[900px] animate-updown md:-my-4">
-                    <img src="/images/protection.png" alt="">
+                    <img src="/images/protection.png" alt="img">
                 </div>
             </div>
         </div>

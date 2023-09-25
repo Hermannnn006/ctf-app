@@ -41,14 +41,17 @@ const load = async $state => {
         try {
         console.log(data.scores.current_page)
         const response = await axios.get(`/scores?page=${data.scores.current_page=data.page}`);
-        const json = await response.data;
-        if (json.data < 10) $state.complete();
-        else {
+        const json = await response.data.data;
+
+        if(json < 10){
+            $state.complete();
+        } else {
             response.data.data.map(item => {
             data.scores.data.push(item);
-        });
-      }
-      data.page++
+            });
+            $state.loaded();
+        }
+        data.page++
     } catch (error) {
         $state.error();
     }

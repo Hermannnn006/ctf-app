@@ -105,6 +105,7 @@
                 <x-responsive-nav-link :href="route('profile.index')" :active="request()->routeIs('profile*')">
                     {{ __('Profile') }}
                 </x-responsive-nav-link>
+                @auth
                 @cannot('user')          
                 <x-responsive-nav-link :href="route('dashboard.index')" :active="request()->routeIs('dashboard')">
                     {{ __('Dashboard') }}
@@ -112,7 +113,6 @@
                 @endcannot
             </div>
 
-            @auth
             <!-- Responsive Settings Options -->
             <div class="pt-4 pb-1 border-t border-gray-200">
                 <div class="px-4">
@@ -132,6 +132,10 @@
                     </form>
                 </div>
             </div>
+            @else
+            <x-responsive-nav-link :href="route('login')" :active="request()->routeIs('login')">
+                {{ __('Login') }}
+            </x-responsive-nav-link>
             @endauth
         </div>
     </nav>

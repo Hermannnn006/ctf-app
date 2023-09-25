@@ -8,7 +8,7 @@
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="bg-transparent overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="p-6 border-b border-gray-200">
-                            <x-splade-table :for="$users">                        
+                            <x-splade-table :for="$users" search-debounce="1100" >                        
                                 @cell('action', $user)
                                 <Link modal href="/users/{{ $user->username }}"><span class="text-blue-400"><i class="bi bi-eye-fill" /></span></Link>
                                 @endcell
