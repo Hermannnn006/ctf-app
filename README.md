@@ -1,9 +1,10 @@
 Sebuah web aplikasi untuk belajar mengenai cyber security dengan cara mengexploitasi sistem yang telah dibuat, untuk mendapatkan sebuah flag yang digunakan sebagai jawaban, pada web aplikasi ini terdapat beberapa fitur yaitu:
 1. Mengelola tantangan (CRUD) : Role->super admin dan admin
 2. Mengelola user (UD) : Role->super admin
-3. Mengelola kategori (CRUD) Role->super admin
+3. Mengelola kategori (CRUD) : Role->super admin
 4. Mengerjakan tantangan Role->super admin, admin dan user
 5. Scoreboard
+6. Melihat detail user lain (nama, username, point dan tantangan yang telah dikerjakan)
 
 Tampilan Aplikasi
 1. tampilan login
