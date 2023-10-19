@@ -1,4 +1,4 @@
-Demo : https://hermansyah.c1.is
+Demo : https://hermansyah.c1.is <br>
 Sebuah web aplikasi untuk belajar mengenai cyber security dengan cara mengexploitasi sistem yang telah dibuat, untuk mendapatkan sebuah flag yang digunakan sebagai jawaban, pada web aplikasi ini terdapat beberapa fitur yaitu:
 1. Mengelola tantangan (CRUD) : Role->super admin dan admin
 2. Mengelola user (UD) : Role->super admin
@@ -9,10 +9,10 @@ Sebuah web aplikasi untuk belajar mengenai cyber security dengan cara mengexploi
 
 Dibuat menggunakan:
 1. laravel
-   a. laravel breeze (authentication)
-   b. gates (authorization)
-   c. eloquent orm
-   d. laravel splade (single page applications (SPA) package)
+   1. laravel breeze (authentication)
+   2. gates (authorization)
+   3. eloquent orm
+   4. laravel splade (single page applications (SPA) package)
 3. vue js (library vue3-infinite-loading)
 4. axios
 5. database mysql
