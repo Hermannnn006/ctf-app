@@ -12,7 +12,7 @@ Dibuat menggunakan:
    a. laravel breeze (authentication) <br>
    b. gates (authorization) <br>
    c. eloquent orm <br>
-   d. laravel splade (single page applications (SPA) package) <br>
+   d. laravel splade (datatable, modal, form dan routing) <br>
 3. vue js (library vue3-infinite-loading)
 4. axios
 5. database mysql
