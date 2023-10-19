@@ -1,4 +1,11 @@
-Aplikasi platform bermain capture the flag dibuat dengan laravel, splade, vue dan tailwindcss
+Sebuah web aplikasi untuk belajar mengenai cyber security dengan cara mengexploitasi sistem yang telah dibuat, untuk mendapatkan sebuah flag yang digunakan sebagai jawaban, pada web aplikasi ini terdapat beberapa fitur yaitu:
+1. Mengelola tantangan (CRUD) : Role->super admin dan admin
+2. Mengelola user (UD) : Role->super admin
+3. Mengelola kategori (CRUD) Role->super admin
+4. Mengerjakan tantangan Role->super admin, admin dan user
+5. Scoreboard
+
+Tampilan Aplikasi
 1. tampilan login
 ![screenshot-127 0 0 1_8000-2023 09 04-10_17_49](https://github.com/Hermannnn006/ctf-app/assets/92978253/72e9a893-a109-4edf-a911-4c6972bcde6e)
 2. tampilan home
