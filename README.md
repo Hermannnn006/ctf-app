@@ -9,10 +9,10 @@ Sebuah web aplikasi untuk belajar mengenai cyber security dengan cara mengexploi
 
 Dibuat menggunakan:
 1. laravel
-   1. laravel breeze (authentication)
-   2. gates (authorization)
-   3. eloquent orm
-   4. laravel splade (single page applications (SPA) package)
+   a. laravel breeze (authentication)
+   b. gates (authorization)
+   c. eloquent orm
+   d. laravel splade (single page applications (SPA) package)
 3. vue js (library vue3-infinite-loading)
 4. axios
 5. database mysql
