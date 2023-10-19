@@ -8,11 +8,11 @@ Sebuah web aplikasi untuk belajar mengenai cyber security dengan cara mengexploi
 6. Melihat detail user lain (nama, username, point dan tantangan yang telah dikerjakan)
 
 Dibuat menggunakan:
-1. laravel
-   a. laravel breeze (authentication)
-   b. gates (authorization)
-   c. eloquent orm
-   d. laravel splade (single page applications (SPA) package)
+1. laravel <br>
+   a. laravel breeze (authentication) <br>
+   b. gates (authorization) <br>
+   c. eloquent orm <br>
+   d. laravel splade (single page applications (SPA) package) <br>
 3. vue js (library vue3-infinite-loading)
 4. axios
 5. database mysql
